@@ -1,0 +1,20 @@
+<html>
+    <head>OK
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <ul id="todo-app">
+            <li class="item">Walk the dog</li>
+            <li class="item">Pay bills</li>
+            <li class="item">Make dinner</li>
+            <li class="item">Code for one hour</li>
+        </ul>
+
+        <script>
+            $(".item").on('click', function(){
+                var data = $(this).html();
+                alert("Clicked:"+data);
+            })
+        </script>
+    </body>
+</html>
